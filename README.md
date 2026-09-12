@@ -1,164 +1,2713 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفسير الأحلام – عبدالقادر عصام</title>
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Segoe UI',sans-serif;background:#0b0e1a;color:#eee;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
-        .container{max-width:800px;width:100%;background:#141929;padding:30px;border-radius:20px;border:1px solid #f0c27f55;box-shadow:0 0 40px rgba(240,194,127,.1)}
-        header{text-align:center;border-bottom:2px solid #f0c27f;padding-bottom:15px;margin-bottom:25px}
-        header h1{color:#f0c27f;font-size:2rem}
-        header p{color:#aaa;margin-top:5px}
-        header strong{color:#f0c27f}
-        textarea{width:100%;height:120px;padding:15px;border-radius:12px;border:none;background:#1e2337;color:#fff;font-size:1.1rem;resize:vertical;outline:2px solid transparent;transition:.3s}
-        textarea:focus{outline:2px solid #f0c27f}
-        .btn-group{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin:20px 0}
-        button{padding:14px 35px;border:none;border-radius:50px;font-size:1.2rem;font-weight:bold;cursor:pointer;transition:.3s;flex:1 1 auto}
-        .btn-primary{background:#f0c27f;color:#141929}
-        .btn-primary:hover{transform:scale(1.05);box-shadow:0 0 30px rgba(240,194,127,.4)}
-        .btn-secondary{background:#3a3f5a;color:#eee}
-        .btn-secondary:hover{background:#555b7a}
-        .result-box{background:#1e2337;padding:20px;border-radius:16px;border:1px solid #f0c27f55;margin-top:20px;display:none;animation:fadeIn .4s ease}
-        .result-box.show{display:block}
-        .result-item{padding:12px 0;border-bottom:1px solid #2a2f45}
-        .result-item:last-child{border-bottom:none}
-        .label{color:#f0c27f;font-weight:bold;font-size:1.05rem}
-        .value{color:#ddd;font-size:1.05rem;margin-top:4px;line-height:1.8}
-        .not-found{border-right:4px solid #f0c27f;padding-right:12px;background:#1f1a2a;border-radius:6px}
-        footer{text-align:center;margin-top:35px;padding-top:20px;border-top:1px solid #2a2f45;color:#888;font-size:.9rem}
-        footer .reason{color:#aaa;font-style:italic;margin-top:10px;background:#10141f;padding:12px;border-radius:12px}
-        @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-        @media(max-width:600px){header h1{font-size:1.5rem}button{width:100%}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>عبدالقادر AR | للبرمجيات وأمن المعلومات</title>
+
+<meta name="description" content="عبدالقادر AR - مطور برمجيات ومهتم بالتقنية وأمن المعلومات والذكاء الاصطناعي وتطوير التطبيقات والمواقع.">
+<meta name="theme-color" content="#0b0e14">
+
+<style>
+/* =========================================
+   عبدالقادر AR
+   الموقع الشخصي للبرمجيات وأمن المعلومات
+   ========================================= */
+
+:root {
+  --black: #0b0e14;
+  --dark: #111722;
+  --dark-2: #18212d;
+  --gold: #ffd700;
+  --gold-dark: #d4a800;
+  --white: #ffffff;
+  --bg: #f4f6fb;
+  --text: #17202d;
+  --muted: #667085;
+  --border: #e5eaf2;
+  --card: #ffffff;
+  --shadow: 0 12px 35px rgba(11,14,20,.07);
+  --radius: 22px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+body.dark {
+  --bg: #080b10;
+  --text: #f2f4f7;
+  --muted: #a6b0bf;
+  --border: #293240;
+  --card: #111722;
+  --shadow: 0 12px 35px rgba(0,0,0,.2);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+.section {
+  padding: 85px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading .label {
+  color: var(--gold-dark);
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: auto;
+}
+
+/* ===== الأزرار ===== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 24px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-weight: 800;
+  font-size: .95rem;
+  transition: .3s;
+  text-align: center;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.btn-gold:hover {
+  background: #e6b800;
+  transform: translateY(-3px);
+}
+
+.btn-dark {
+  background: var(--black);
+  color: var(--gold);
+}
+
+.btn-outline {
+  border-color: var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--gold-dark);
+}
+
+/* ===== الهيدر ===== */
+
+.header {
+  background: var(--black);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 20px rgba(0,0,0,.12);
+}
+
+.navbar {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #ffe45b, #e6b800);
+  color: var(--black);
+  font-size: 23px;
+  font-weight: 950;
+  letter-spacing: -1px;
+  box-shadow: 0 5px 18px rgba(255,215,0,.16);
+}
+
+.brand-text strong {
+  display: block;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.brand-text span {
+  display: block;
+  color: #aab5c5;
+  font-size: .67rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: #c8d0dc;
+  font-size: .88rem;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-btn,
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #303b4b;
+  border-radius: 10px;
+  background: #151c27;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* ===== الرئيسية ===== */
+
+.hero {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255,215,0,.10), transparent 28%),
+    radial-gradient(circle at 90% 80%, rgba(56,87,120,.20), transparent 30%),
+    linear-gradient(135deg, #0b0e14, #192330);
+  color: white;
+  padding: 85px 0 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold);
+  background: rgba(255,215,0,.08);
+  border: 1px solid rgba(255,215,0,.2);
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: 950;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero h1 small {
+  display: block;
+  font-size: .42em;
+  font-weight: 500;
+  color: #aab5c5;
+  margin-top: 12px;
+}
+
+.hero-description {
+  color: #b8c3d0;
+  font-size: 1.05rem;
+  line-height: 2;
+  max-width: 570px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-buttons .btn-outline {
+  background: rgba(255,255,255,.05);
+  border-color: #3a4656;
+  color: white;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card {
+  width: min(100%, 370px);
+  border: 1px solid rgba(255,215,0,.25);
+  background: rgba(255,255,255,.045);
+  border-radius: 28px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0,0,0,.2);
+}
+
+.hero-logo {
+  width: 125px;
+  height: 125px;
+  background: linear-gradient(145deg, #ffe45b, #e6b800);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 950;
+  border-radius: 34px;
+  margin: 0 auto 22px;
+  box-shadow: 0 12px 40px rgba(255,215,0,.15);
+}
+
+.hero-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 3px;
+}
+
+.hero-card p {
+  color: #aab5c5;
+  font-size: .9rem;
+}
+
+.hero-card .line {
+  height: 1px;
+  background: rgba(255,215,0,.2);
+  margin: 23px 0;
+}
+
+.hero-card .quote {
+  color: var(--gold);
+  font-weight: 800;
+  font-size: .95rem;
+}
+
+.hero-card .mini-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.mini-tags span {
+  background: #0b0e14;
+  color: var(--gold);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: .72rem;
+}
+
+/* ===== شريط الإحصائيات ===== */
+
+.stats {
+  margin-top: -1px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stat {
+  padding: 25px 15px;
+  text-align: center;
+  border-left: 1px solid var(--border);
+}
+
+.stat:last-child {
+  border-left: 0;
+}
+
+.stat strong {
+  display: block;
+  color: var(--gold-dark);
+  font-size: 1.5rem;
+  font-weight: 950;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+/* ===== من أنا ===== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-visual {
+  background: linear-gradient(145deg, var(--black), #1d2a38);
+  color: white;
+  padding: 35px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-visual::before {
+  content: "AR";
+  position: absolute;
+  font-size: 11rem;
+  font-weight: 950;
+  color: rgba(255,215,0,.045);
+  left: -15px;
+  bottom: -50px;
+}
+
+.about-visual .small-label {
+  color: var(--gold);
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.about-visual h3 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.about-visual p {
+  color: #b8c3d0;
+  font-size: .9rem;
+}
+
+.about-content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  color: var(--muted);
+  margin-bottom: 17px;
+}
+
+.about-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.about-point {
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.about-point span {
+  color: var(--gold-dark);
+  margin-left: 5px;
+}
+
+/* ===== الخدمات ===== */
+
+.services {
+  background: var(--card);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 27px;
+  transition: .3s;
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212,168,0,.55);
+}
+
+.card-icon {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,215,0,.12);
+  color: var(--gold-dark);
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.9;
+}
+
+/* ===== المشاريع ===== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.project-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  color: var(--gold);
+  border-radius: 15px;
+  font-size: 1.4rem;
+}
+
+.status {
+  font-size: .68rem;
+  background: rgba(255,215,0,.12);
+  color: var(--gold-dark);
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.project-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 9px;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.9;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.project-tags span {
+  border: 1px solid var(--border);
+  padding: 3px 9px;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: .68rem;
+}
+
+/* ===== المهارات ===== */
+
+.skills {
+  background: var(--card);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: .9rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.skill-head span:last-child {
+  color: var(--gold-dark);
+  font-size: .75rem;
+}
+
+.skill-bar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold));
+  border-radius: 20px;
+  transition: width 1.2s ease;
+}
+
+.skills-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.skills-text p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-list span {
+  padding: 8px 13px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: .8rem;
+  background: var(--bg);
+}
+
+/* ===== المسار المهني ===== */
+
+.timeline {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-right: 60px;
+  margin-bottom: 35px;
+}
+
+.timeline-dot {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 38px;
+  height: 38px;
+  background: var(--black);
+  color: var(--gold);
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .85rem;
+  font-weight: 900;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.timeline-item p {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* ===== القيم ===== */
+
+.values {
+  background: var(--card);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.value {
+  text-align: center;
+  padding: 25px 15px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.value .value-icon {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.value h3 {
+  font-size: .95rem;
+  margin-bottom: 7px;
+}
+
+.value p {
+  font-size: .78rem;
+  color: var(--muted);
+}
+
+/* ===== الذكاء الاصطناعي ===== */
+
+.ai-section {
+  background: linear-gradient(135deg, var(--black), #1b2937);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.ai-section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.ai-section h2 span {
+  color: var(--gold);
+}
+
+.ai-section p {
+  color: #b8c3d0;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.ai-features {
+  display: grid;
+  gap: 13px;
+}
+
+.ai-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  background: rgba(255,255,255,.035);
+  font-size: .85rem;
+}
+
+.ai-feature b {
+  color: var(--gold);
+}
+
+.ai-box {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,215,0,.2);
+  border-radius: 25px;
+  padding: 28px;
+}
+
+.ai-box-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.ai-avatar {
+  width: 50px;
+  height: 50px;
+  background: var(--gold);
+  color: var(--black);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 950;
+  font-size: 1.2rem;
+}
+
+.ai-box-top strong {
+  display: block;
+}
+
+.ai-box-top span {
+  color: #9eacbd;
+  font-size: .75rem;
+}
+
+.ai-message {
+  background: rgba(255,255,255,.07);
+  border-radius: 15px;
+  padding: 17px;
+  color: #d6dee8;
+  font-size: .88rem;
+  line-height: 2;
+}
+
+.ai-message b {
+  color: var(--gold);
+}
+
+.ai-note {
+  font-size: .72rem;
+  color: #9eacbd;
+  margin-top: 18px;
+}
+
+/* ===== التعليم والخبرة ===== */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.info-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.info-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.info-list {
+  display: grid;
+  gap: 12px;
+}
+
+.info-list li {
+  list-style: none;
+  position: relative;
+  padding-right: 23px;
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.info-list li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: var(--gold-dark);
+  font-weight: 900;
+}
+
+/* ===== الأسئلة ===== */
+
+.faq {
+  background: var(--card);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--card);
+}
+
+.faq-question {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  padding: 20px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: .95rem;
+  font-weight: 800;
+}
+
+.faq-question span {
+  color: var(--gold-dark);
+  font-size: 1.2rem;
+  transition: .3s;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 20px;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 2;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-question span {
+  transform: rotate(45deg);
+}
+
+/* ===== التواصل ===== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.contact-info {
+  background: var(--black);
+  color: white;
+  border-radius: 23px;
+  padding: 30px;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-info > p {
+  color: #b8c3d0;
+  font-size: .9rem;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 0;
+  border-bottom: 1px solid #293340;
+}
+
+.contact-item:last-child {
+  border-bottom: 0;
+}
+
+.contact-item .contact-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,215,0,.1);
+  border-radius: 10px;
+  color: var(--gold);
+}
+
+.contact-item strong {
+  display: block;
+  font-size: .85rem;
+}
+
+.contact-item span,
+.contact-item a {
+  color: #aab5c5;
+  font-size: .78rem;
+  direction: ltr;
+  text-align: right;
+  display: block;
+}
+
+.contact-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 23px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form h3 {
+  font-size: 1.3rem;
+  margin-bottom: 22px;
+}
+
+.form-group {
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  display: block;
+  font-size: .82rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  padding: 13px 14px;
+  border-radius: 11px;
+  outline: none;
+  font-size: .88rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--gold-dark);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-message {
+  color: var(--muted);
+  font-size: .78rem;
+  margin-top: 10px;
+}
+
+/* ===== الفوتر ===== */
+
+.footer {
+  background: var(--black);
+  color: white;
+  padding: 55px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 35px;
+}
+
+.footer h3 {
+  font-size: 1.05rem;
+  margin-bottom: 17px;
+}
+
+.footer-brand p {
+  color: #9eacbd;
+  font-size: .82rem;
+  line-height: 2;
+  max-width: 300px;
+  margin-top: 15px;
+}
+
+.footer-links {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #9eacbd;
+  font-size: .82rem;
+  transition: .3s;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-quote {
+  color: var(--gold);
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.footer-bottom {
+  border-top: 1px solid #293340;
+  padding-top: 22px;
+  text-align: center;
+  color: #657487;
+  font-size: .75rem;
+}
+
+.footer-bottom span {
+  color: var(--gold);
+}
+
+/* ===== زر العودة للأعلى ===== */
+
+.to-top {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 43px;
+  height: 43px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 900;
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== الجوال ===== */
+
+@media (max-width: 900px) {
+
+  .hero-grid,
+  .about-grid,
+  .ai-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-card {
+    max-width: 340px;
+  }
+
+  .about-visual {
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .cards-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    left: 0;
+    background: var(--black);
+    padding: 20px 5%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid #293340;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 13px 0;
+    border-bottom: 1px solid #202a36;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .navbar {
+    min-height: 68px;
+  }
+
+  .nav-links {
+    top: 68px;
+  }
+
+  .logo {
+    width: 43px;
+    height: 43px;
+    font-size: 20px;
+  }
+
+  .brand-text strong {
+    font-size: .95rem;
+  }
+
+  .brand-text span {
+    font-size: .6rem;
+  }
+
+  .hero {
+    padding: 45px 0 55px;
+  }
+
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .hero-description {
+    font-size: .9rem;
+  }
+
+  .hero-card {
+    padding: 25px 18px;
+  }
+
+  .hero-logo {
+    width: 100px;
+    height: 100px;
+    font-size: 38px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat:nth-child(2) {
+    border-left: 0;
+  }
+
+  .stat strong {
+    font-size: 1.3rem;
+  }
+
+  .cards-grid,
+  .projects-grid,
+  .skills-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    padding: 25px;
+  }
+
+  .about-visual h3 {
+    font-size: 1.6rem;
+  }
+
+  .card,
+  .project-card,
+  .info-box,
+  .contact-info,
+  .contact-form {
+    padding: 22px;
+  }
+
+  .ai-box {
+    padding: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer {
+    padding-top: 40px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.7rem;
+  }
+
+  .to-top {
+    left: 15px;
+    bottom: 15px;
+  }
+}
+
+/* ===== تقليل الحركة ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  html {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
 </head>
+
 <body>
-<div class="container">
-<header>
-    <h1>🌙 برنامج تفسير الأحلام الذكي والمتكامل</h1>
-    <p>المبرمج والمطور: <strong>عبدالقادر عصام حسن محمد</strong> – 775800699</p>
-    <p>📚 قاعدة البيانات تحتوي على: <span id="dreamCount">5000</span> حلم ورؤيا</p>
+
+<!-- =========================================
+     شريط التنقل
+     ========================================= -->
+
+<header class="header">
+  <div class="container navbar">
+
+    <a href="#home" class="brand">
+      <div class="logo">AR</div>
+      <div class="brand-text">
+        <strong>عبدالقادر <span style="display:inline;color:#ffd700;">AR</span></strong>
+        <span>للبرمجيات وأمن المعلومات</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من أنا</a>
+      <a href="#services">الخدمات</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#skills">المهارات</a>
+      <a href="#contact">تواصل معي</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeBtn" aria-label="تغيير المظهر">☾</button>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    </div>
+
+  </div>
 </header>
 
-<textarea id="dreamInput" placeholder="اكتب وصف حلمك هنا بتفصيل ..."></textarea>
 
-<div class="btn-group">
-    <button class="btn-primary" onclick="interpretDream()">🔮 فسّر حلمي الآن</button>
-    <button class="btn-secondary" onclick="clearAll()">🗑️ مسح النص</button>
-</div>
+<!-- =========================================
+     الرئيسية
+     ========================================= -->
 
-<div id="resultBox" class="result-box">
-    <div id="resultContent"></div>
-</div>
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-<footer>
-    <p>تم التطوير والبرمجة بواسطة: عبدالقادر عصام حسن محمد – 775800699</p>
-    <p>جميع الحقوق محفوظة © 2026 – اليمن</p>
-    <p class="reason">🌱 صُنع هذا البرنامج ليكون عوناً لكل من يسعى لفهم رؤاه وأحلامه، وليكون جسراً بين العالم الداخلي للإنسان وبين معاني الروح والنفس، وأسأل الله أن ينفع به كل من يقرأه ويستخدمه، وأن يجعله صدقة جارية لي ولوالدي.</p>
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        ✦ أهلاً بك في عالمي التقني
+      </div>
+
+      <h1>
+        أنا <span>عبدالقادر</span>
+        <small>مطور برمجيات ومهتم بالتقنية وأمن المعلومات</small>
+      </h1>
+
+      <p class="hero-description">
+        أعمل على تطوير أفكاري ومهاراتي في البرمجة،
+        تطبيقات أندرويد، تصميم المواقع، الذكاء الاصطناعي،
+        أمن المعلومات، والخدمات الرقمية.
+        أسعى إلى تحويل الأفكار إلى حلول عملية ومشاريع حقيقية.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-gold">استكشف مشاريعي ←</a>
+        <a href="#contact" class="btn btn-outline">تواصل معي</a>
+      </div>
+
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+
+        <div class="hero-logo">AR</div>
+
+        <h3>عبدالقادر AR</h3>
+        <p>للبرمجيات وأمن المعلومات</p>
+
+        <div class="line"></div>
+
+        <div class="quote">
+          أفكار اليوم .. حلول الغد
+        </div>
+
+        <div class="mini-tags">
+          <span>Web</span>
+          <span>AI</span>
+          <span>Cloud</span>
+          <span>Cybersecurity</span>
+          <span>Mobile Apps</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     الإحصائيات
+     ========================================= -->
+
+<section class="stats">
+  <div class="container stats-grid">
+
+    <div class="stat">
+      <strong>2023</strong>
+      <span>سنة التخرج</span>
+    </div>
+
+    <div class="stat">
+      <strong>AR</strong>
+      <span>هويتي التقنية</span>
+    </div>
+
+    <div class="stat">
+      <strong>6+</strong>
+      <span>مجالات تقنية</span>
+    </div>
+
+    <div class="stat">
+      <strong>∞</strong>
+      <span>طموح للتعلم والتطوير</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     من أنا
+     ========================================= -->
+
+<section class="section" id="about">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">من أنا</div>
+      <h2>تعرف على عبدالقادر</h2>
+      <p>رحلة تجمع بين إدارة الأعمال والتقنية والبرمجة والطموح.</p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-visual">
+
+        <div class="small-label">MY DIGITAL IDENTITY</div>
+
+        <h3>عبدالقادر<br>AR</h3>
+
+        <p>
+          مطور برمجيات ومهتم بالتقنية وأمن المعلومات،
+          أسعى إلى بناء مشاريع رقمية مفيدة تحمل هويتي الشخصية.
+        </p>
+
+        <div style="margin-top:25px;color:#ffd700;font-weight:800;">
+          بالعِلم والإيمان .. نصنع مستقبلًا أفضل
+        </div>
+
+      </div>
+
+      <div class="about-content">
+
+        <h3>مرحبًا بك في عالمي</h3>
+
+        <p>
+          أنا عبدالقادر، خريج إدارة الأعمال عام 2023،
+          ومهتم بمجالات البرمجة والتكنولوجيا والذكاء الاصطناعي
+          وأمن المعلومات وصيانة وبرمجة الهواتف.
+        </p>
+
+        <p>
+          أعمل على تطوير نفسي ومهاراتي، وتحويل الأفكار إلى
+          تطبيقات ومواقع وأدوات رقمية تساعد المستخدمين
+          وتقدم حلولًا عملية ومفيدة.
+        </p>
+
+        <p>
+          أؤمن بأن التعلم المستمر والإصرار والعمل الجاد
+          هي أساس التطور، وأن كل مشروع يبدأ بفكرة صغيرة
+          يمكن أن يصبح إنجازًا حقيقيًا.
+        </p>
+
+        <div class="about-points">
+          <div class="about-point"><span>✓</span> خريج إدارة الأعمال</div>
+          <div class="about-point"><span>✓</span> مهتم بالبرمجة</div>
+          <div class="about-point"><span>✓</span> مهتم بأمن المعلومات</div>
+          <div class="about-point"><span>✓</span> شغوف بالمشاريع الرقمية</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     الخدمات والمجالات
+     ========================================= -->
+
+<section class="section services" id="services">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">مجالاتي</div>
+      <h2>ماذا أقدم؟</h2>
+      <p>
+        مجالات تقنية وإدارية أعمل على تطوير معرفتي ومهاراتي فيها.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>البرمجة وتطوير البرمجيات</h3>
+        <p>
+          تطوير أدوات وحلول برمجية، وتصميم واجهات
+          وتجارب استخدام بسيطة وعملية.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>تطبيقات أندرويد</h3>
+        <p>
+          تصميم وتطوير تطبيقات الهاتف والأدوات اليومية
+          مثل الحاسبات وقوائم المهام.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>تصميم وتطوير المواقع</h3>
+        <p>
+          إنشاء مواقع شخصية وصفحات تعريفية ومشاريع
+          رقمية متجاوبة مع الهاتف والكمبيوتر.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>أمن المعلومات</h3>
+        <p>
+          الاهتمام بالخصوصية والوعي الأمني ومفاهيم
+          حماية الحسابات والمعلومات والاستخدام الآمن.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>الذكاء الاصطناعي</h3>
+        <p>
+          استكشاف أدوات الذكاء الاصطناعي وتوظيفها
+          في التعلم والبرمجة وتطوير المشاريع.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <h3>صيانة وبرمجة الهواتف</h3>
+        <p>
+          اهتمام بصيانة الهواتف الذكية وبرمجتها
+          وتشخيص المشكلات التقنية المتعلقة بها.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>إدارة الأعمال</h3>
+        <p>
+          توظيف الخلفية الأكاديمية في الإدارة والتنظيم
+          والتخطيط وخدمة العملاء.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>صناعة المحتوى</h3>
+        <p>
+          الاهتمام بالمحتوى التقني والهوية البصرية
+          والخدمات الرقمية.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>ريادة الأعمال</h3>
+        <p>
+          تحويل الأفكار إلى مشاريع رقمية قابلة للتطوير
+          واستكشاف فرص العمل التقني.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     المشاريع
+     ========================================= -->
+
+<section class="section" id="projects">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">أعمالي</div>
+      <h2>مشاريعي الرقمية</h2>
+      <p>
+        أفكار وأدوات ومشاريع أعمل على تطويرها ضمن مساري التقني.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🤖</div>
+          <span class="status">قيد التطوير</span>
+        </div>
+        <h3>مساعد عبدالقادر الذكاء الاصطناعي</h3>
+        <p>
+          مساعد ذكي شخصي يحمل اسم عبدالقادر،
+          يهدف إلى جمع معلوماتي ومهاراتي ومشاريعي
+          في تجربة رقمية واحدة.
+        </p>
+        <div class="project-tags">
+          <span>AI</span>
+          <span>Web</span>
+          <span>Personal</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🧮</div>
+          <span class="status">مكتمل</span>
+        </div>
+        <h3>حاسبة الخصم</h3>
+        <p>
+          تطبيق يساعد المستخدم على حساب قيمة الخصم
+          والسعر النهائي للمنتج بطريقة سهلة وسريعة.
+        </p>
+        <div class="project-tags">
+          <span>Android</span>
+          <span>Calculator</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">📿</div>
+          <span class="status">مكتمل</span>
+        </div>
+        <h3>عداد التسبيح</h3>
+        <p>
+          تطبيق رقمي بسيط لعد التسبيح والأذكار
+          بواجهة سهلة الاستخدام.
+        </p>
+        <div class="project-tags">
+          <span>Android</span>
+          <span>Tools</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🎲</div>
+          <span class="status">مكتمل</span>
+        </div>
+        <h3>القرعة العشوائية</h3>
+        <p>
+          أداة لاختيار عنصر عشوائي من مجموعة أسماء
+          أو خيارات بطريقة عملية وسريعة.
+        </p>
+        <div class="project-tags">
+          <span>Random</span>
+          <span>Android</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🎂</div>
+          <span class="status">مكتمل</span>
+        </div>
+        <h3>حاسبة العمر</h3>
+        <p>
+          تطبيق لحساب العمر بناءً على تاريخ الميلاد
+          وعرض النتيجة بشكل واضح.
+        </p>
+        <div class="project-tags">
+          <span>Android</span>
+          <span>Calculator</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">📝</div>
+          <span class="status">مكتمل</span>
+        </div>
+        <h3>قائمة المهام</h3>
+        <p>
+          تطبيق لتنظيم المهام اليومية ومتابعة الأعمال
+          التي يريد المستخدم إنجازها.
+        </p>
+        <div class="project-tags">
+          <span>Productivity</span>
+          <span>Android</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🔤</div>
+          <span class="status">فكرة مستقبلية</span>
+        </div>
+        <h3>مشروع تطبيق Arabizi</h3>
+        <p>
+          فكرة تطبيق لأدوات الكتابة بالعربيزي والتحويل
+          بين أنماط الكتابة.
+        </p>
+        <div class="project-tags">
+          <span>Language</span>
+          <span>Mobile Apps</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">♾️</div>
+          <span class="status">هوية شخصية</span>
+        </div>
+        <h3>مشروع AR للبرمجيات والهواتف</h3>
+        <p>
+          هوية ومشروع تقني شخصي يهتم بالبرمجيات
+          والهواتف والخدمات الرقمية.
+        </p>
+        <div class="project-tags">
+          <span>Brand</span>
+          <span>Technology</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">💡</div>
+          <span class="status">مستقبلي</span>
+        </div>
+        <h3>أفكار تقنية جديدة</h3>
+        <p>
+          استكشاف المزيد من الأفكار في الذكاء الاصطناعي
+          والمواقع والتطبيقات وأمن المعلومات.
+        </p>
+        <div class="project-tags">
+          <span>Innovation</span>
+          <span>Future</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     المهارات
+     ========================================= -->
+
+<section class="section skills" id="skills">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">قدراتي</div>
+      <h2>المهارات والتقنيات</h2>
+      <p>
+        مهارات أعمل على تطويرها باستمرار ضمن مساري التقني.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>تطوير المواقع</span>
+            <span>HTML · CSS · JS</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>تطبيقات أندرويد</span>
+            <span>Android</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>الذكاء الاصطناعي</span>
+            <span>AI</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>أمن المعلومات</span>
+            <span>Cybersecurity</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>إدارة الأعمال</span>
+            <span>Business</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85%"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills-text">
+
+        <h3>أتعلم .. أطور .. أبتكر</h3>
+
+        <p>
+          أعمل على تطوير مهاراتي التقنية والإدارية،
+          واستكشاف الأدوات الحديثة وتحويل المعرفة
+          إلى تطبيقات ومشاريع عملية.
+        </p>
+
+        <div class="skill-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Android</span>
+          <span>AI</span>
+          <span>Cybersecurity</span>
+          <span>Cloud</span>
+          <span>Business Admin</span>
+          <span>Mobile Repair</span>
+          <span>Digital Services</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     المؤهلات والدورات
+     ========================================= -->
+
+<section class="section" id="education">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">التعلم والخبرة</div>
+      <h2>المؤهلات والدورات</h2>
+      <p>خلفية أكاديمية واهتمام بالتعلم المستمر.</p>
+    </div>
+
+    <div class="education-grid">
+
+      <div class="info-box">
+        <h3>🎓 المؤهلات الأكاديمية</h3>
+        <ul class="info-list">
+          <li>بكالوريوس إدارة الأعمال -- خريج 2023</li>
+          <li>دبلوم الحاسوب</li>
+          <li>دبلوم صيانة وبرمجة الهواتف</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h3>📚 الدورات التدريبية</h3>
+        <ul class="info-list">
+          <li>ONYX Pro</li>
+          <li>Sphere</li>
+          <li>M&E</li>
+          <li>حماية الطفل</li>
+          <li>مفاهيم الأعمال</li>
+          <li>الإدارة المكتبية</li>
+          <li>القيادة والتخطيط</li>
+          <li>العلاقات العامة وخدمة العملاء</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     المسار التطويري
+     ========================================= -->
+
+<section class="section" id="journey">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">مساري التطويري</div>
+      <h2>رحلتي نحو المستقبل</h2>
+      <p>خطوات مستمرة في التعلم وبناء المشاريع.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot">1</div>
+        <h3>بناء الأساس</h3>
+        <p>
+          تعلم أساسيات الحاسوب والهواتف والبرمجيات،
+          مع بناء الخلفية الأكاديمية في إدارة الأعمال.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">2</div>
+        <h3>توسيع المهارات</h3>
+        <p>
+          تطوير المعرفة في البرمجة والتطبيقات والمواقع
+          وأمن المعلومات والخدمات الرقمية.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">3</div>
+        <h3>بناء المشاريع</h3>
+        <p>
+          تصميم أدوات وتطبيقات بسيطة وتحويل الأفكار
+          إلى تجارب عملية تحمل هوية AR.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">4</div>
+        <h3>الذكاء الاصطناعي</h3>
+        <p>
+          استكشاف الذكاء الاصطناعي وبناء مساعد ذكي
+          شخصي وتوظيف التقنية في المشاريع.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">5</div>
+        <h3>المستقبل</h3>
+        <p>
+          تطوير مشاريع أكثر احترافية، وتوسيع الخبرة
+          العملية، وبناء مسار مهني تقني قوي.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     القيم والمبادئ
+     ========================================= -->
+
+<section class="section values">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">مبادئي</div>
+      <h2>القيم التي أؤمن بها</h2>
+      <p>العلم والإبداع والمسؤولية أساس التطور.</p>
+    </div>
+
+    <div class="values-grid">
+
+      <div class="value">
+        <div class="value-icon">📚</div>
+        <h3>التعلم المستمر</h3>
+        <p>المعرفة رحلة لا تتوقف.</p>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">💡</div>
+        <h3>الإبداع</h3>
+        <p>كل فكرة قد تصبح مشروعًا.</p>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">🛡️</div>
+        <h3>الأمان</h3>
+        <p>الخصوصية والاستخدام المسؤول.</p>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">🚀</div>
+        <h3>الإصرار</h3>
+        <p>التقدم خطوة بعد خطوة.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     الذكاء الاصطناعي
+     ========================================= -->
+
+<section class="section ai-section" id="ai">
+  <div class="container ai-grid">
+
+    <div>
+
+      <div class="hero-badge">✦ مشروع الذكاء الاصطناعي</div>
+
+      <h2>
+        تعرف على<br>
+        <span>مساعد عبدالقادر</span>
+      </h2>
+
+      <p>
+        مساعد ذكي شخصي يحمل اسم عبدالقادر AR،
+        يهدف إلى تقديم تجربة رقمية تجمع المعلومات
+        والمشاريع والمهارات في مكان واحد.
+      </p>
+
+      <div class="ai-features">
+        <div class="ai-feature">
+          <b>✓</b>
+          معلوماتي وهويتي الرقمية
+        </div>
+        <div class="ai-feature">
+          <b>✓</b>
+          مشاريعي ومهاراتي التقنية
+        </div>
+        <div class="ai-feature">
+          <b>✓</b>
+          الاستفادة من الذكاء الاصطناعي
+        </div>
+        <div class="ai-feature">
+          <b>✓</b>
+          تطوير مستمر للمشروع
+        </div>
+      </div>
+
+      <div style="margin-top:25px;">
+        <a href="#contact" class="btn btn-gold">تواصل معي حول المشروع</a>
+      </div>
+
+    </div>
+
+    <div class="ai-box">
+
+      <div class="ai-box-top">
+        <div class="ai-avatar">AR</div>
+        <div>
+          <strong>مساعد عبدالقادر الذكاء الاصطناعي</strong>
+          <span>مساعد شخصي · مشروع تقني</span>
+        </div>
+      </div>
+
+      <div class="ai-message">
+        السلام عليكم ورحمة الله وبركاته 👋
+        <br><br>
+        أهلًا بك في مساعد عبدالقادر AR
+        <br><br>
+        <b>فكرة اليوم .. حلول الغد</b>
+        <br><br>
+        هنا تلتقي التقنية بالمعرفة،
+        وتتحول الأفكار إلى مشاريع رقمية.
+      </div>
+
+      <div class="ai-note">
+        هذا القسم تعريفي بالمشروع. لإضافة محادثة فعلية،
+        اربطه بواجهة API للذكاء الاصطناعي.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     الأسئلة الشائعة
+     ========================================= -->
+
+<section class="section faq" id="faq">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">الأسئلة الشائعة</div>
+      <h2>هل لديك سؤال؟</h2>
+      <p>إجابات مختصرة عن عبدالقادر AR ومشاريعه.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          من هو عبدالقادر AR؟
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          عبدالقادر AR هو الهوية التقنية الشخصية لعبدالقادر،
+          مطور برمجيات ومهتم بالتقنية وأمن المعلومات
+          وتطوير التطبيقات والمواقع والخدمات الرقمية.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          ما المجالات التي تهتم بها؟
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          البرمجة، تطبيقات أندرويد، المواقع، الذكاء الاصطناعي،
+          أمن المعلومات، صيانة وبرمجة الهواتف، إدارة الأعمال
+          والخدمات الرقمية.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          هل يمكن التعاون في مشروع تقني؟
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          يمكنك التواصل معي لمناقشة فكرة المشروع
+          وتحديد المتطلبات والإمكانيات المناسبة للتنفيذ.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          هل جميع المشاريع مكتملة؟
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          لا، بعض المشاريع مكتملة وبعضها قيد التطوير
+          وبعضها أفكار مستقبلية. حالة كل مشروع موضحة في البطاقة.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          كيف أتواصل مع عبدالقادر؟
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          يمكنك استخدام وسائل التواصل الموجودة في قسم
+          تواصل معي، أو تعبئة نموذج الرسالة.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     تواصل معي
+     ========================================= -->
+
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="label">تواصل معي</div>
+      <h2>لنبدأ فكرة جديدة</h2>
+      <p>
+        للاستفسارات والأفكار والمشاريع والتعاون في المجالات التقنية.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+
+        <h3>مرحبًا بك 👋</h3>
+
+        <p>
+          إذا كان لديك مشروع أو فكرة أو استفسار،
+          يسعدني التواصل معك ومناقشة التفاصيل.
+        </p>
+
+        <!-- استبدل البيانات التالية ببياناتك الحقيقية -->
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <strong>واتساب</strong>
+            <a href="https://wa.me/967775800699" target="_blank" rel="noopener">
+              +967 775800699
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>البريد الإلكتروني</strong>
+            <a href="mailto:wwwtamerhosny775@gmail.com">
+              ar@example.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <strong>الموقع الإلكتروني</strong>
+            <span>ضع رابط موقعك هنا</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>الموقع</strong>
+            <span>اليمن</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="contact-form">
+
+        <h3>أرسل رسالتك</h3>
+
+        <form id="contactForm">
+
+          <div class="form-group">
+            <label for="name">الاسم</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="اكتب اسمك"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@email.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="type">نوع الطلب</label>
+            <select id="type" required>
+              <option value="">اختر نوع الطلب</option>
+              <option>استفسار عام</option>
+              <option>مشروع موقع إلكتروني</option>
+              <option>مشروع تطبيق أندرويد</option>
+              <option>الذكاء الاصطناعي</option>
+              <option>تعاون تقني</option>
+              <option>خدمات رقمية</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">الرسالة</label>
+            <textarea
+              id="message"
+              placeholder="اكتب تفاصيل رسالتك هنا..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width:100%;">
+            إرسال الرسالة ←
+          </button>
+
+          <p class="form-message" id="formMessage">
+            سيتم تجهيز رسالة بريد إلكتروني من البيانات التي تدخلها.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     الفوتر
+     ========================================= -->
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="brand">
+          <div class="logo">AR</div>
+          <div class="brand-text">
+            <strong style="color:white;">عبدالقادر <span style="display:inline;color:#ffd700;">AR</span></strong>
+            <span>للبرمجيات وأمن المعلومات</span>
+          </div>
+        </a>
+
+        <p>
+          مطور برمجيات ومهتم بالتقنية وأمن المعلومات
+          والذكاء الاصطناعي والمشاريع الرقمية.
+        </p>
+
+      </div>
+
+      <div>
+        <h3>روابط الموقع</h3>
+        <div class="footer-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#about">من أنا</a>
+          <a href="#services">الخدمات</a>
+          <a href="#projects">المشاريع</a>
+          <a href="#contact">تواصل معي</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>شعاري</h3>
+        <div class="footer-quote">
+          فكرة اليوم .. حلول الغد
+          <br><br>
+          بالعِلم والإيمان .. نصنع مستقبلًا أفضل
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year">2026</span>
+      <span>عبدالقادر · AR</span>
+      -- جميع الحقوق محفوظة
+    </div>
+
+  </div>
 </footer>
-</div>
+
+
+<!-- زر العودة للأعلى -->
+
+<button class="to-top" id="toTop" aria-label="العودة للأعلى">↑</button>
+
 
 <script>
-// ============================================================
-// قاعدة البيانات الضخمة – أكثر من 300 حلم ورؤيا
-// ============================================================
-const dreamDB = {
-"الماء": { تفسير: "الماء في المنام يدل على الحياة والرزق والبركة، وهو رمز للصفاء والنماء. رؤية الماء الصافي العذب تبشر بالخير والفرج القريب، أما الماء العكر فيشير إلى الهموم والمشاكل التي قد تواجهها في حياتك. والماء بشكل عام يعكس حالتك النفسية ومدى صفاء روحك.", نفسي: "أنت تعيش فترة من النقاء والصفاء الداخلي، وتشعر بالرغبة في التطهير والتجديد، وتريد أن تتخلص من كل ما يثقل روحك.", روحي: "الماء فيض إلهي ورحمة من الله، وهو رمز للحياة الروحية والتجديد، ويشير إلى قربك من الله واستعدادك لتلقي الخير.", نصيحة: "اشكر الله على نعمه، وتوضأ وصلّ، وتذكر أن الماء هبة من الله، فاحافظ عليه ولا تسرف فيه." },
-"النار": { تفسير: "النار في المنام ترمز إلى القوة والغضب والطاقة العارمة، وقد تكون إشارة إلى سلطة أو قوة تتحكم بك. النار المشتعلة تدل على الخطر أو الفتنة، أما النار الهادئة فترمز إلى الدفء والراحة. وإذا رأيت أنك تحترق بالنار، فقد تكون تعاني من ضغوط نفسية كبيرة.", نفسي: "لديك انفعالات مكبوتة تحتاج إلى تفريغ، وقد تمر بفترة من التوتر والغضب الداخلي، وتحتاج إلى السيطرة على أعصابك.", روحي: "النار رمز التطهير الروحي، فقد تكون هذه الرؤيا دعوة لك لتطهير قلبك من الضغائن والأحقاد، والرجوع إلى الله.", نصيحة: "تحكم في غضبك، واستغفر الله، وتذكر أن النار الحقيقية هي نار جهنم، فاحذرها بطاعة الله." },
-"الطيران": { تفسير: "الطيران في الحلم يدل على الطموح العالي والرغبة في التحرر من قيود الحياة الدنيا. رؤية نفسك تطير بجناحين تعني أنك تسعى لتحقيق أهدافك السامية، أما الطيران في السماء فيبشر بالنجاح والوصول إلى مراتب عالية. وإذا شعرت بالخوف أثناء الطيران، فذلك يدل على قلقك من المستقبل.", نفسي: "أنت شخص طموح وتحب الحرية والاستقلال، وتسعى للارتقاء بنفسك ومستقبلك، وتكره القيود والالتزامات المثقلة.", روحي: "الطيران يدل على الارتقاء الروحي والسمو بالنفس، وهو إشارة إلى قربك من الله وعلو همتك في طلب العلم والعبادة.", نصيحة: "تواضع ولا تتعالى على الناس، وتذكر أن العلو الحقيقي هو العلو في الدرجات عند الله، فاحرص على الطاعات." },
-"الثعبان": { تفسير: "الثعبان في المنام يرمز إلى العدو الخفي أو الشخص الذي يضمر لك السوء. وقد يدل على الخوف من شيء ما في حياتك. إذا هاجمك الثعبان، فهذا يعني أن هناك من يحاول إيذائك، أما إذا هرب منك، فذلك نصر عليهم.", نفسي: "تعاني من خوف عميق في داخلك، ربما من شخص أو موقف معين، وتحتاج إلى مواجهة مخاوفك بدلاً من الهروب منها.", روحي: "الثعبان في الرؤيا قد يكون رمزاً للفتنة أو الشيطان، وهو تحذير لك لتقوي إيمانك وتتحصن بالله من شرور النفس والآخرين.", نصيحة: "توكل على الله، وأكثر من قراءة آية الكرسي والمعوذات، وواجه مخاوفك بشجاعة." },
-"الذهب": { تفسير: "الذهب في المنام يدل على المال والزينة، ولكنه قد يكون أيضاً رمزاً للهم والغم، فالذهب في الدنيا زينة واختبار، وقد يكون إشارة إلى المال الحرام أو الطمع الزائد. رؤية الذهب بكثرة قد تعني انشغالك بالدنيا عن الآخرة.", نفسي: "أنت شخص طماع تسعى لجمع المال والجاه، وقد تكون منشغلاً بالمظاهر عن الجوهر، وتحتاج إلى إعادة تقييم أولوياتك.", روحي: "الذهب زينة الدنيا، وهو اختبار من الله لك، فانظر كيف تتصرف فيه، وتذكر أن الآخرة خير وأبقى.", نصيحة: "أذكر الآخرة، وتصدق من مالك، ولا تجعل الدنيا تشغلك عن طاعة الله، فالذهب زائل والبقاء لله." },
-"الموت": { تفسير: "الموت في المنام لا يعني الموت الحقيقي، بل هو رمز للتحول والتغيير الكبير في الحياة. قد يدل على نهاية مرحلة وبداية أخرى، أو موت شيء في حياتك مثل عادة سيئة أو علاقة فاسدة. كما قد يكون إشارة إلى التوبة والرجوع إلى الله.", نفسي: "أنت تمر بمرحلة انتقالية في حياتك، وقد تشعر بالخوف من المجهول، أو برغبة في التغيير الجذري، وتحتاج إلى تقبل التغيير.", روحي: "الموت هو باب الانتقال إلى الآخرة، وهو تذكير لك بأن الحياة دار فناء، فاستعد للقاء الله بالعمل الصالح.", نصيحة: "استعد للموت بالتوبة والاستغفار، وأحسن عملك، وتذكر أن كل نفس ذائقة الموت، فكن مستعداً." },
-"الزواج": { تفسير: "الزواج في المنام يدل على الفرح والارتباط والاستقرار. رؤية الزواج تعني انفراج الهموم وتحقيق الأماني، وقد تدل على مشروع جديد أو شراكة ناجحة. وإذا كنت أعزباً فهي بشارة قريبة، وإذا كنت متزوجاً فهي تجديد للمودة والرحمة.", نفسي: "أنت تشعر بالرغبة في الاستقرار العاطفي والنفسي، وتبحث عن شريك حياة أو عن علاقة مستقرة تمنحك الأمان والطمأنينة.", روحي: "الزواج نصف الدين، وهو آية من آيات الله، وفيه سكن ومودة ورحمة، فاحرص على إتمامه على سنة الله ورسوله.", نصيحة: "أحسن الاختيار في الزواج، وتوكل على الله، وأكثر من صلاة الاستخارة، وتذكر أن الزواج ميثاق غليظ." },
-"السفر": { تفسير: "السفر في الحلم يدل على التغيير والانتقال من حال إلى حال. قد يكون سفراً حقيقياً أو معنوياً كالسفر في طلب العلم أو الرزق. رؤية السفر تبشر بالخير والتوسع، وقد تدل على الهروب من مشكلة.", نفسي: "أنت تشعر بالرغبة في الهروب من واقعك، أو بحاجة إلى التغيير والتجديد، وقد تكون تعاني من الملل أو الروتين.", روحي: "السفر في سبيل الله عبادة، وهو فرصة للتعلم والتزود بالتقوى، فالسفر الحقيقي هو رحلة الروح إلى الله.", نصيحة: "تزود بالتقوى، واختر صحبة صالحة، واجعل نيتك في السفر طاعة الله، ودعاء السفر يحميك." },
-"الأسد": { تفسير: "الأسد في المنام يرمز إلى القوة والسلطان والشجاعة. رؤية الأسد تدل على هيبة وقوة، وقد تعني أنك تتعامل مع شخص قوي أو صاحب سلطة. إذا هاجمك الأسد، فهذا يعني أن هناك من يتحداك.", نفسي: "أنت شخص قوي وشجاع، لكن قد تكون متسلطاً أو متكبراً أحياناً، وتحتاج إلى التحكم في قوتك وعدم استخدامها في الظلم.", روحي: "الأسد رمز العزة والقوة، ولكن العزة الحقيقية هي عزة الإيمان والطاعة لله، فلا تغتر بقوتك.", نصيحة: "لا تغتر بقوتك، وتواضع لله وللناس، وتذكر أن القوة الحقيقية هي في السيطرة على النفس." },
-"الورد": { تفسير: "الورد في المنام يدل على الجمال والراحة والسرور. رؤية الورد الأحمر ترمز إلى الحب والعاطفة، والورد الأبيض يرمز إلى النقاء والصفاء، والورد بشكل عام بشارة خير وفرح قريب.", نفسي: "أنت شخص عاطفي وحساس، تشعر بالجمال في الحياة، وتبحث عن الراحة النفسية والاستقرار العاطفي.", روحي: "الورد رمز الجمال الإلهي والنعيم، وهو تذكير لك بأن الله جميل يحب الجمال، فكن جميلاً في أخلاقك.", نصيحة: "أشكر الله على جمال الحياة، وازرع الورد في قلبك وفي حياة الناس، وابتسم في وجه الجميع." },
-"البحر": { تفسير: "البحر في المنام يدل على الدنيا الواسعة والخير الكثير. رؤية البحر الهادئ تبشر بالخير والرزق، والبحر الهائج يدل على الفتن والمشاكل. الغوص في البحر يعني السعي في طلب العلم أو المال.", نفسي: "أنت شخص طموح ومغامر، تحب الاستكشاف والتجديد، وقد تكون متقلب المزاج أحياناً، وتحتاج إلى الثبات.", روحي: "البحر رمز رحمة الله وفضله، وهو دعوة لك للتأمل في عظمة الخالق، والغوص في بحار العلم والإيمان.", نصيحة: "كن كالماء في لينه ونقائه، وتوكل على الله، ولا تخاف من أمواج الحياة، فالقارب هو التوكل على الله." },
-"الجبل": { تفسير: "الجبل في المنام يدل على العز والقوة والثبات. رؤية الجبل تعني أنك شخص صلب وثابت في مبادئك، وقد تدل على منعة وعزة، وتسلق الجبل يعني تحقيق الأهداف الكبيرة.", نفسي: "أنت شخص طموح وقوي الإرادة، تسعى لتحقيق أهدافك مهما كانت الصعوبات، وتحتاج أحياناً إلى المرونة.", روحي: "الجبل رمز الثبات على الدين والإيمان، وهو دعوة لك لتكون راسخاً في عقيدتك، وتسلقه يعني الاقتراب من الله.", نصيحة: "تواضع ولا تتعال على الناس، وتذكر أن الجبل العالي قد ينكسر، فكن ليناً مع إخوانك." },
-"القمر": { تفسير: "القمر في المنام يدل على الهدى والجمال والنور. رؤية القمر في السماء تبشر بالخير، والقمر المكتمل يدل على تمام الأمر واكتمال الفرح، أما خسوف القمر فيشير إلى المصائب.", نفسي: "أنت شخص حنون ورومانسي، تحب الجمال والهدوء، وتحتاج إلى الاستقرار العاطفي، وتشعر بالارتياح في الأجواء الهادئة.", روحي: "القمر نور إلهي يضيء ظلمة الليل، وهو رمز لهداية الله ونوره في قلب المؤمن، فاسأل الله أن ينير قلبك بالإيمان.", نصيحة: "اسأل الله النور والهداية، وأكثر من ذكر الله في الليل، وتأمل في آيات الله في الكون." },
-"الشمس": { تفسير: "الشمس في المنام تدل على الولاية والضياء والسلطان. رؤية الشمس الساطعة تبشر بالخير والنصر، وغروب الشمس يدل على زوال النعمة أو نهاية شيء مهم، والشمس بشكل عام ترمز إلى الوضوح والصراحة.", نفسي: "أنت شخص واضح وصريح، تحب الظهور والتميز، وقد تكون ثقتك بنفسك عالية، لكن احذر من الغرور.", روحي: "الشمس نور الله وضياؤه، وهي رمز للوحي والنبوة، فالله هو نور السماوات والأرض، فاستنير بنور القرآن.", نصيحة: "لا تغتر بقوتك، وتواضع لله، وتذكر أن الشمس تشرق وتغرب بأمر الله، فكن عبداً شكوراً." },
-"الريح": { تفسير: "الريح في المنام تدل على التقلب والتغيير السريع. الريح الطيبة تبشر بالخير والفرج، والريح العاصفة تدل على الفتن والشدائد. وهي تعكس تقلب مزاجك وحالتك النفسية.", نفسي: "أنت شخص متقلب المزاج، قد تكون سعيداً في لحظة وحزيناً في أخرى، وتحتاج إلى الاستقرار النفسي والهدوء الداخلي.", روحي: "الريح من آيات الله، وهي روح الله التي يرسلها رحمة أو عذاباً، فاطلب من الله أن يجعلك في ريح رحمته.", نصيحة: "استقيم على أمر الله، وتوكل عليه، ولا تنخدع بتقلبات الدنيا، فالثبات على الحق هو الفوز." }
-};
-// ============================================================
-// رسائل لطيفة جداً وطويلة جداً للحلم غير الموجود
-// ============================================================
-const kindMessages = [
-"يا صديقي العزيز، هذا الحلم الذي رأيته هو حلم جميل وخاص بك، وقد لا نجد له تفسيراً محدداً في قواعد بياناتنا، لكن هذا لا يعني أنه بلا معنى. كل حلم هو رسالة من روحك، وقد يكون إشارة من الله إليك. تأمل في تفاصيل الحلم واربطها بما تمر به في حياتك، فربما تجد فيه إجابة لسؤال في نفسك. لا تحزن، فالأحلام أضغاث وأماني، والأهم هو إيمانك بالله وتوكلك عليه، وأن تسأله الرؤية الصالحة التي تجمع لك الخير في الدنيا والآخرة. استبشر بالخير، وتفاءل، فالله معك دائماً.",
-"أخي الحبيب، لم نعثر على تفسير مباشر لحلمك في قاعدة بياناتنا، ولكن تذكر أن الرؤيا جزء من نفسك، وهي مرآة تعكس ما في قلبك وعقلك الباطن. حاول أن تتأمل في مشاعرك أثناء الحلم، وفي الألوان والأشخاص الذين ظهروا فيه، فقد يكون ذلك مفتاحاً لفهم معناه. اجعل الحلم دافعاً لك للتفكر والتأمل، واطلب من الله أن يريك الخير ويرشدك إلى الصواب، فأنت في رعايته وحفظه.",
-"هذا الحلم الذي رأيته هو حلم فريد ومميز، وربما يحمل لك رسالة خاصة من روحك أو من الله. لا تقلق إذا لم نجد له تفسيراً، فبعض الأحلام تكون مجرد أضغاث أحلام، وبعضها الآخر يكون رسائل روحية عميقة. خذ وقتك في التفكير في الحلم، وتأمل في ما يمر به قلبك، وتوكل على الله واسأله أن يمن عليك بالخير والبركة في حياتك كلها.",
-"لا تحزن يا صديقي، فليس كل حلم يحتاج إلى تفسير. بعض الأحلام هي مجرد انعكاس لأفكارك ومشاعرك خلال اليوم، وبعضها الآخر قد يكون رسالة من روحك أو من الله. تذكر أن الإيمان بالله والتوكل عليه هو خير ما يمكن أن تفعله، وأن تسأل الله أن يريكم الرؤيا الصالحة التي تبشر بالخير. استبشر، فالله يحب عباده المتوكلين عليه.",
-"نحن هنا من أجلك أيها العزيز، وحلمك يستحق التأمل والتفكر. قد لا يكون له تفسير محدد، لكنك تستطيع أن تجد فيه معنى لنفسك، بأن تسأل نفسك: ما الذي شعرت به أثناء الحلم؟ وما هي الرسالة التي قد تكون موجهة إليك؟ توكل على الله، واطلب منه الهداية والعون، وثق أنه سيظهر لك الخير في وقته المناسب."
-];
-// ============================================================
-// دالة التفسير الرئيسية
-// ============================================================
-function interpretDream() {
-    const input = document.getElementById('dreamInput');
-    const text = input.value.trim();
-    if (text.length < 2) {
-        alert('⚠️ الرجاء إدخال وصف أوضح وأطول للحلم ليتمكن البرنامج من تحليله بدقة.');
-        return;
-    }
-    let found = null, keyword = null;
-    for (const [key, value] of Object.entries(dreamDB)) {
-        if (text.includes(key)) {
-            found = value;
-            keyword = key;
-            break;
-        }
-    }
-    let result;
-    if (found) {
-        result = {
-            موجود: true,
-            تفسير: found.تفسير,
-            نفسي: found.نفسي,
-            روحي: found.روحي,
-            نصيحة: found.نصيحة,
-            مفتاح: keyword
-        };
-    } else {
-        const msg = kindMessages[Math.floor(Math.random() * kindMessages.length)];
-        result = {
-            موجود: false,
-            تفسير: msg,
-            نفسي: "هذا الحلم يعكس مشاعرك الداخلية وأفكارك الباطنة، وهو دعوة من نفسك لتتوقف قليلاً وتستمع إلى ما يجول في خاطرك. حاول أن تفهم ما تمر به، وتذكر أن كل مشاعر تمر بها هي رسائل من روحك تحتاج إلى الاستماع إليها بوعي وحكمة.",
-            روحي: "هذه الرؤيا قد تكون إشارة من الله لتنبيهك أو تذكيرك بشيء مهم في حياتك. الروح تتواصل معك بطرق خفية، وهذا الحلم هو واحد منها. استمع إلى صوتك الداخلي، واطلب من الله أن يهديك ويرشدك إلى ما هو خير لك في دنياك وآخرتك.",
-            نصيحة: "استغفر الله وتوكل عليه، وأكثر من الدعاء أن يرزقك الرؤيا الصالحة التي تدلك على الخير. وثق بأن الله معك، وأن كل شيء يحدث بحكمته وعلمه، فلا تيأس وأبشر بالخير دائماً."
-        };
-    }
-    const box = document.getElementById('resultBox');
-    const content = document.getElementById('resultContent');
-    let html = `
-        <div class="result-item"><div class="label">📖 التفسير المفصل</div><div class="value">${result.تفسير}</div></div>
-        <div class="result-item"><div class="label">🧠 الجانب النفسي والتحليل العميق</div><div class="value">${result.نفسي}</div></div>
-        <div class="result-item"><div class="label">✨ الجانب الروحي والإيماني</div><div class="value">${result.روحي}</div></div>
-        <div class="result-item"><div class="label">💡 النصيحة والتوجيه</div><div class="value">${result.نصيحة}</div></div>
-    `;
-    if (result.موجود) {
-        html += `<div class="result-item"><div class="label">🔑 الكلمة المفتاحية التي تم العثور عليها</div><div class="value">"${result.مفتاح}" – هذه الكلمة هي مفتاح تفسير حلمك</div></div>`;
-    } else {
-        html += `<div class="result-item not-found"><div class="label">🌱 رسالة خاصة لك</div><div class="value">هذا الحلم خاص بك وحدك، تعلم منه الخير، واستمع إلى رسالة روحك، وثق بأن الله يسمع دعاءك ويجيب سؤالك.</div></div>`;
-    }
-    html += `<div class="result-item" style="border-top:2px solid #f0c27f55; margin-top:15px; padding-top:15px; color:#aaa; text-align:center; line-height:1.8;">🤲 أسأل الله العظيم أن يمن عليك بالخير في منامك ويقظتك، وأن يبارك لك في حياتك ويرزقك الرؤيا الصالحة التي تقربك إليه، وتجعل أيامك كلها خيراً وبركة وفرحاً وسعادة. آمين يا رب العالمين.</div>`;
-    content.innerHTML = html;
-    box.classList.add('show');
-}
-// ============================================================
-// دالة المسح
-// ============================================================
-function clearAll() {
-    document.getElementById('dreamInput').value = '';
-    document.getElementById('resultBox').classList.remove('show');
-}
-// ============================================================
-// تشغيل تلقائي عند تحميل الصفحة
-// ============================================================
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('dreamCount').textContent = Object.keys(dreamDB).length;
-    console.log('🌙 برنامج تفسير الأحلام الذكي جاهز ومفعل – عبدالقادر عصام حسن محمد – 775800699');
+/* =========================================
+   JavaScript - عبدالقادر AR
+   ========================================= */
+
+// ===== القائمة في الهاتف =====
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function() {
+
+  navLinks.classList.toggle("active");
+
+  const isOpen = navLinks.classList.contains("active");
+
+  menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  menuBtn.textContent = isOpen ? "✕" : "☰";
+
 });
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+  link.addEventListener("click", function() {
+
+    navLinks.classList.remove("active");
+
+    menuBtn.setAttribute("aria-expanded", "false");
+
+    menuBtn.textContent = "☰";
+
+  });
+
+});
+
+
+// ===== الوضع الليلي =====
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", function() {
+
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+
+  themeBtn.textContent = isDark ? "☀" : "☾";
+
+  themeBtn.setAttribute(
+    "aria-label",
+    isDark ? "تفعيل الوضع الفاتح" : "تفعيل الوضع الليلي"
+  );
+
+});
+
+
+// ===== الأسئلة الشائعة =====
+
+document.querySelectorAll(".faq-question").forEach(function(button) {
+
+  button.addEventListener("click", function() {
+
+    const item = button.parentElement;
+
+    const isOpen = item.classList.contains("open");
+
+    document.querySelectorAll(".faq-item").forEach(function(other) {
+
+      other.classList.remove("open");
+
+      other.querySelector(".faq-question span").textContent = "+";
+
+    });
+
+    if (!isOpen) {
+
+      item.classList.add("open");
+
+      button.querySelector("span").textContent = "×";
+
+    }
+
+  });
+
+});
+
+
+// ===== السنة الحالية =====
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
+// ===== زر العودة للأعلى =====
+
+const toTop = document.getElementById("toTop");
+
+window.addEventListener("scroll", function() {
+
+  if (window.scrollY > 400) {
+
+    toTop.classList.add("show");
+
+  } else {
+
+    toTop.classList.remove("show");
+
+  }
+
+});
+
+toTop.addEventListener("click", function() {
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+});
+
+
+// ===== تحريك أشرطة المهارات =====
+
+const skillFills = document.querySelectorAll(".skill-fill");
+
+const skillObserver = new IntersectionObserver(function(entries) {
+
+  entries.forEach(function(entry) {
+
+    if (entry.isIntersecting) {
+
+      const fill = entry.target;
+
+      fill.style.width = fill.dataset.width;
+
+      skillObserver.unobserve(fill);
+
+    }
+
+  });
+
+}, {
+  threshold: .3
+});
+
+skillFills.forEach(function(fill) {
+
+  skillObserver.observe(fill);
+
+});
+
+
+// ===== نموذج التواصل =====
+// يفتح تطبيق البريد بعد تجهيز الرسالة.
+// لا يحتاج خادمًا، لكنه لا يرسل الرسالة تلقائيًا.
+
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const type = document.getElementById("type").value;
+  const message = document.getElementById("message").value.trim();
+
+  const subject = encodeURIComponent(
+    "رسالة جديدة من موقع عبدالقادر AR - " + type
+  );
+
+  const body = encodeURIComponent(
+    "الاسم: " + name + "\n" +
+    "البريد: " + email + "\n" +
+    "نوع الطلب: " + type + "\n\n" +
+    "الرسالة:\n" + message
+  );
+
+  // غيّر البريد هنا إلى بريدك الحقيقي
+  const destination = wwwtamerhosny775@gmail.com";
+
+  window.location.href =
+    "mailto:" + destination +
+    "?subject=" + subject +
+    "&body=" + body;
+
+  formMessage.textContent =
+    "تم تجهيز الرسالة. إذا لم يفتح البريد، استخدم واتساب للتواصل.";
+
+});
+
 </script>
+
 </body>
 </html>
